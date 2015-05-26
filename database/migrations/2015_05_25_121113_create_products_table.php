@@ -18,6 +18,7 @@ class CreateProductsTable extends Migration {
 			$table->integer('category_id')->unsigned();
 			$table->string('sku');
 			$table->string('name');
+			$table->string('slug')->unique();
 			$table->text('description');
 			$table->double('price');
 			$table->boolean('isAvailable');

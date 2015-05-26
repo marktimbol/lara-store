@@ -1,12 +1,29 @@
+.container {
+  max-width: 960px; }
+
 body {
   padding-top: 70px;
   background: #fafafa; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
 
 img {
   width: 100%; }
 
 .slideshow {
   margin-top: -20px; }
+
+.box {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: hidden; }
 
 .owl-carousel .owl-item {
   text-align: center;
@@ -20,5 +37,24 @@ img {
       height: 100%; }
       .owl-carousel .owl-item .product a:hover {
         text-decoration: none; }
+
+.product-details h1:first-of-type {
+  margin-top: 0px; }
+
+.product-details .product-thumbnails {
+  margin-bottom: 20px; }
+  .product-details .product-thumbnails a img {
+    width: 33px;
+    height: 30px;
+    padding: 2px; }
+  .product-details .product-thumbnails a:hover {
+    text-decoration: none; }
+
+.product-details h3 {
+  font-size: 40px;
+  margin-top: 0px; }
+  .product-details h3 label {
+    font-size: 14px;
+    margin-top: 16px; }
 
 /*# sourceMappingURL=app.css.map */

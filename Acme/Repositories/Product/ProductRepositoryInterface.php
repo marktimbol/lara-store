@@ -3,4 +3,6 @@
 interface ProductRepositoryInterface {
 
 	public function getAll();
+
+	public function find( $slug );
 }

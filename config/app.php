@@ -140,6 +140,8 @@ return [
 		'Laracasts\Flash\FlashServiceProvider',
 
 		'Acme\Providers\ProductServiceProvider',
+		'Acme\Providers\CartServiceProvider',
+		'Acme\Providers\UserServiceProvider',
 
 		/*
 		 * Application Service Providers...

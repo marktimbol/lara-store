@@ -20,10 +20,13 @@ class ProductTableSeeder extends Seeder {
 
 		for( $i = 0; $i < 50; $i++ ) {
 
+			$name = $faker->sentence(3);
+
 			Product::create([
 				'category_id' => 1,
 				'sku' => 'sku'.$i,
-				'name' => $faker->sentence(3),
+				'name' => $name,
+				'slug' => str_slug( $name, '-' ) . '-' . $i,
 				'description' => $faker->text,
 				'price' => $faker->randomNumber(2),
 				'isAvailable' => true,

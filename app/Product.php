@@ -13,4 +13,8 @@ class Product extends Model  {
 	protected $fillable = ['category_id', 'sku', 'name', 'description', 'price', 'isAvailable', 'image'];
 
 
+	public function user() {
+		return $this->belongsToMany('App\User', 'user_cart');
+	}
+
 }

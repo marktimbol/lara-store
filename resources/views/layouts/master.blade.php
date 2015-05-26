@@ -13,7 +13,7 @@
 			@include('layouts.partials._navbar')
 		</div>
 
-		@include('layouts.partials._slideshow')
+		<?php /*@include('layouts.partials._slideshow')*/ ?>
 
 		<div class="container">
 

@@ -31,4 +31,9 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 */
 	protected $hidden = ['password', 'remember_token'];
 
+
+	public function cart() {
+		return $this->belongsToMany('App\Product', 'user_cart');
+	}
+
 }

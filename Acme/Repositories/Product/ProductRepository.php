@@ -8,4 +8,7 @@ class ProductRepository implements ProductRepositoryInterface {
 		return Product::all();
 	}
 
+	public function find( $slug ) {
+		return Product::whereSlug( $slug )->first();
+	}
 }

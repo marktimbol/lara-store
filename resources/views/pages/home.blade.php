@@ -4,8 +4,6 @@
 
 	
 	<div class="row">
-		<h2>Top Selling Items</h2>
-		@include('pages.partials._product_carousel')
 
 		<h2>Mobiles</h2>
 		@include('pages.partials._product_carousel')
