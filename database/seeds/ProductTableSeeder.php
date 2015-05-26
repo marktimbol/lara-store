@@ -14,6 +14,8 @@ class ProductTableSeeder extends Seeder {
 	 */
 	public function run()
 	{
+		Product::truncate();
+		
 		$faker = Faker\Factory::create();
 
 		for( $i = 0; $i < 50; $i++ ) {
@@ -21,7 +23,7 @@ class ProductTableSeeder extends Seeder {
 			Product::create([
 				'category_id' => 1,
 				'sku' => 'sku'.$i,
-				'name' => $faker->sentence,
+				'name' => $faker->sentence(3),
 				'description' => $faker->text,
 				'price' => $faker->randomNumber(2),
 				'isAvailable' => true,

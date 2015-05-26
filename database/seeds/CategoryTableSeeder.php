@@ -15,6 +15,7 @@ class CategoryTableSeeder extends Seeder {
 	public function run()
 	{
 
+		Category::truncate();
 		Category::create([
 			'name' => 'Category 1',
 			'description' => 'Category description'

@@ -1,6 +1,6 @@
 <?php namespace Acme\Repositories\Product;
 
-class ProductRepositoryInterface {
+interface ProductRepositoryInterface {
 
 	public function getAll();
 }

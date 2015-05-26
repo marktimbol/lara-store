@@ -8,9 +8,14 @@
 	</head>
 
 	<body>
+		
 		<div class="container">
-
 			@include('layouts.partials._navbar')
+		</div>
+
+		@include('layouts.partials._slideshow')
+
+		<div class="container">
 
 			@include('system.message')
 

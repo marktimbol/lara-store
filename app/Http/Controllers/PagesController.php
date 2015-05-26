@@ -19,9 +19,9 @@ class PagesController extends Controller {
 
 	public function home() {
 
-		$products = $this->products->getAll();
+		$products = $this->product->getAll();
 
-		return $products;
+	
 		return view('pages.home', compact('products'));
 	}
 
